@@ -16,8 +16,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/game?serverTimezone=Asia/Seoul
-    username: yejin
-    password: yejin1004
+    username: root
+    password: Yejin1004?
     
   jpa:
     open-in-view: true
