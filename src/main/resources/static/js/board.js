@@ -25,7 +25,7 @@ let index = {
 			dataType : "json"
 		}).done(function(resp){
 			alert("글쓰기 완료!");
-			location.href="/FlashHeaven/board/story";
+			location.href="/FlashHeaven/board/notice";
 		}).fail(function(error){
 			alert(JSON.stringify(error));
 		}); 
@@ -40,7 +40,7 @@ let index = {
 			dataType : "json"
 		}).done(function(resp){
 			alert("삭제 완료!");
-			location.href="/FlashHeaven/board/story";
+			location.href="/FlashHeaven/board/notice";
 		}).fail(function(error){
 			alert(JSON.stringify(error));
 		}); 
@@ -62,7 +62,7 @@ let index = {
 				dataType: "json"
 			}).done(function(resp){
 				alert("수정 완료!");
-				location.href = "/FlashHeaven/board/story";
+				location.href = "/FlashHeaven/board/notice";
 			});
 	}
 }

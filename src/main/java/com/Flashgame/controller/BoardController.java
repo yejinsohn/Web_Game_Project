@@ -24,10 +24,10 @@ public class BoardController {
 		return "index";
 	}
 	
-	@GetMapping("/board/story")
+	@GetMapping("/board/notice")
 	public String story(Model model, @PageableDefault(size=3, sort="id", direction=Sort.Direction.DESC) Pageable pageable) {
 		model.addAttribute("boards", boardService.StoryList(pageable));
-		return "board/story";
+		return "board/notice";
 	}
 	
 	@GetMapping("/board/{id}")
