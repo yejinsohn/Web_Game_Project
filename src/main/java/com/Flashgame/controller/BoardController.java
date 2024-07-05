@@ -24,8 +24,13 @@ public class BoardController {
 		return "index";
 	}
 	
+	@GetMapping("/board/game")
+	public String game() {
+		return "/board/game";
+	}
+	
 	@GetMapping("/board/notice")
-	public String story(Model model, @PageableDefault(size=3, sort="id", direction=Sort.Direction.DESC) Pageable pageable) {
+	public String notice(Model model, @PageableDefault(size=3, sort="id", direction=Sort.Direction.DESC) Pageable pageable) {
 		model.addAttribute("boards", boardService.StoryList(pageable));
 		return "board/notice";
 	}
@@ -45,7 +50,6 @@ public class BoardController {
 	
 	@GetMapping("/board/write")
 	public String writeform() {
-		
 		return "board/write";
 	}
 }

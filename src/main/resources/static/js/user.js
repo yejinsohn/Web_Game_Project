@@ -1,6 +1,6 @@
 let index = {
 	init : function(){
-		$("#btn-save").on("click", ()=>{ //this를 바인딩하기 위해서 function(){} 대신 사용
+		$("#btn-save2").on("click", ()=>{ //this를 바인딩하기 위해서 function(){} 대신 사용
 			this.save();
 		});
 		$("#btn-login").on("click", ()=>{ //this를 바인딩하기 위해서 function(){} 대신 사용
@@ -29,7 +29,7 @@ let index = {
 			dataType : "json" // 요청에 대한 응답이 왔을때 json이라면 JS오브젝트로 변경 
 		}).done(function(resp){
 			alert("회원가입 완료!");
-			location.href="/FlashHeaven";
+			location.href="/FlashHeaven/auth/loginForm";
 		}).fail(function(error){
 			alert(JSON.stringify(error));
 		}); 
